@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        System.out.println("Hello Tom!!");
+        Main m = new Main();
+        m.calling();
+        Scanner sc = new Scanner(System.in);
+        int[][] a = new int[4][4];
+        System.out.println(a[0][3]);
+        for(int i = 0; i<4; i++)
+        {
+            for (int j = 0; j < 4; j++)
+            {
+                a[i][j] = sc.nextInt();
+                System.out.print(" " + a[i][j]);
+            }
+            System.out.println();
+        }
+
+    }
+
+    public void calling()
+    {
+        System.out.println("Inside calling");
+    }
+}
